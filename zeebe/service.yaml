@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zeebe-gateway
+spec:
+  selector:
+    app: zeebe
+  ports:
+    - name: gateway
+      protocol: TCP
+      port: 26500
+      targetPort: 26500
+    - name: monitoring
+      protocol: TCP
+      port: 9600
+      targetPort: 9600
+  type: ClusterIP
