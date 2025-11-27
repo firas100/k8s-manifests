@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: firaskdidi/projetpfe-backend:7fa67ec3c69dc1741fd2d5f2e237a99b447211cc
+          image: firaskdidi/projetpfe-backend:1a0b046fcddc4f23057e6abbd2136e514eb2c925
           ports:
             - containerPort: 8086
           env:
@@ -39,4 +39,5 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "500m"
+
 
