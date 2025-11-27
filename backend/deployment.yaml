@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: firas100/projetpfe-backend:latest
+          image: firaskdidi/projetpfe-backend:d6f9656cc23b032c62df1b96510fb76c371b3213
           ports:
             - containerPort: 8086
           env:
